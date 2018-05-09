@@ -12,19 +12,19 @@ Face Recognition API from [Clarifai](https://www.clarifai.com/).
 
 ### Sign In
 
-![Sign In](screenshots/magicbrain1.jpg)
+![Sign In](front-end/screenshots/magicbrain1.jpg)
 
 ### Register
 
-![Register](screenshots/magicbrain2.jpg)
+![Register](front-end/screenshots/magicbrain2.jpg)
 
 ### Home Page
 
-![Home](screenshots/magicbrain3.jpg)
+![Home](front-end/screenshots/magicbrain3.jpg)
 
-### Home Page
+### Home Page Detect
 
-![Home detect](screenshots/magicbrain4.jpg)
+![Home detect](front-end/screenshots/magicbrain4.jpg)
 
 ## Available Scripts
 
