@@ -47,6 +47,7 @@ app.post('/register', register.handleRegister(db, bcrypt))
 app.get('/profile/:id', profile.handleProfileGet(db))
 
 app.put('/findface', findface.handleImage(db))
+app.post('/imageUrl', findface.handleApiCall())
 
 
 app.listen(3000, () => {
