@@ -1,3 +1,4 @@
+const PORT = process.env.PORT || 3000
 const bcrypt = require('bcrypt-nodejs')
 const cors = require('cors')
 const bodyParser = require('body-parser')
@@ -29,7 +30,7 @@ const db = knex({
 })
 
 app.get('/', (req, res) => {
-  res.json(database.users)
+  res.json('It is working!')
 })
 
 app.post('/signin', signin.handleSignIn(db, bcrypt))
@@ -40,7 +41,6 @@ app.get('/profile/:id', profile.handleProfileGet(db))
 app.put('/findface', findface.handleImage(db))
 app.post('/imageUrl', findface.handleApiCall())
 
-
-app.listen(3000, () => {
-  console.log('Server Running!')
+app.listen(PORT, () => {
+  console.log(`Server Running on port ${PORT} !`)
 })
