@@ -18,5 +18,6 @@ const Logo = () => {
     </div>
   )
 }
+// TODO: Khatra
 
 export default Logo
