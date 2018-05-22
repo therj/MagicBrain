@@ -1,11 +1,14 @@
 const handleRegister =
-    (db, bcrypt) => (req, res)=> {
+    (db, bcrypt) => (req, res) => {
         const {
             name,
             email,
             password
         } = req.body
 
+        if (!name || !email || !password) {
+            return res.status(400).json("Incorrect form Submission!")
+        }
         const hash = bcrypt.hashSync(password);
 
         db.transaction(trx => {
