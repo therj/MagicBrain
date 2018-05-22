@@ -1,12 +1,3 @@
-// Development -- BEGIN
-const livereload = require('livereload')
-const reload = livereload.createServer()
-reload.watch(__dirname + '/server.js')
-// How does it work?
-// https://stackoverflow.com/questions/45622125/how-can-i-add-live-reload-to-my-nodejs-server/50246338#50246338
-
-// Development -- END
-
 const bcrypt = require('bcrypt-nodejs')
 const cors = require('cors')
 const bodyParser = require('body-parser')
